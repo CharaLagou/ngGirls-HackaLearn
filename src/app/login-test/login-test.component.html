@@ -6,7 +6,10 @@
 
 <div *ngIf="helloMessage$ | async as helloMessage">
   <h2>Hello Message</h2>
-  {{ helloMessage }}
+  {{ helloMessage.responseMessage }}
+
+  <h2>Client Principal from API</h2>
+  {{ helloMessage.clientPrincipal.userDetails }}
 </div>
 
 <br>
@@ -19,7 +22,7 @@
   <h2>User details:</h2>
   {{ user | json }}
 
-  <h2>Username:</h2>
+  <h2>Username from .auth/me:</h2>
   {{ user.clientPrincipal?.userDetails }}
 
 </div>
