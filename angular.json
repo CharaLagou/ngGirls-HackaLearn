@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "ngGirls-HackaLearn"
+  "defaultProject": "ngGirls-HackaLearn",
+  "cli": {
+    "analytics": "ab1da464-18ad-4939-9edb-a8e059c9ebd8"
+  }
 }
