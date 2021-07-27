@@ -16,9 +16,8 @@ export class AuthService {
   /** Method to get a custom hello for the authenticated user */
   getHello$(name:string) {
     // Post request example
-    // return this.httpClient.post(`api/HelloWorld`,{});
+    return this.httpClient.post(`api/HttpTrigger`,{}, {responseType: 'text'});
     // Get hello text from api
-    return this.httpClient.get(`api/HttpTrigger?name=${name}`, {responseType: 'text'});
-
+    // return this.httpClient.get(`api/HttpTrigger?name=${name}`, {responseType: 'text'});
   }
 }
